@@ -12,10 +12,26 @@ body {
     overflow: hidden;
     background-color: #141922;   
     color: white; 
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
-/* INDENDAZIONE */
+
+/* CONTAINER PLAYLIST */
+
+.container-playlist {
+    height: 85%;
+    width: 200px;
+    background-color: black;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
 
 header {
     background-color: #080B12;
@@ -25,34 +41,58 @@ header {
     left: 0;
     right: 0;
     display: flex;
-    height: 100px;
+    height: 80px;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: 0px 2px 2px black;
     padding: 0 50px;
 }
 
-/* CONTAINER PLAYLIST */
-
-.container-playlist {
-    height: 100vh;
-    width: 200px;
-    background-color: black;
-    z-index: 2;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-
+.container-playlist > div {
+    border: 1px solid red;
+    width: 100%;
 }
 
 /* CONTAINER MUSIC */
 
+.container-music > * {
+    margin-left: 200px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.upgrade {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+
+.navigation {
+    width: (100% - 225px);
+}
+
+.notext {
+    text-decoration: none;
+    color: white;
+}
 
 /* CONTAINER PLAYBAR */
 
-/* .container-playbar {
+.container-playbar {
     background-color: #282828;
     height: 100px;
-    width: 100vh;
-} */
+    width: 100%;
+    z-index: 3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
