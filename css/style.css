@@ -9,7 +9,6 @@
 
 body {
     height: 100vh;
-    overflow: hidden;
     background-color: #141922;   
     color: white; 
     padding-top: 80px;
@@ -19,7 +18,7 @@ body {
 /* CONTAINER PLAYLIST */
 
 .container-playlist {
-    height: 85%;
+    height: calc(100% - 100px);
     width: 200px;
     background-color: black;
     z-index: 2;
@@ -30,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
 
 }
 
@@ -47,10 +47,10 @@ header {
     padding: 0 50px;
 }
 
-.container-playlist > div {
-    border: 1px solid red;
-    width: 100%;
+.w-10 {
+    width: 15%;
 }
+
 
 /* CONTAINER MUSIC */
 
@@ -83,6 +83,38 @@ ul {
     text-decoration: none;
     color: white;
 }
+
+.row
+{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.col {
+    text-align: center;
+    width: 15%;
+}
+.cover {
+    height: 200px;
+    width: 200px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.row-recommented {
+    display: flex;
+    margin-top: 25px;
+
+}
+
+
+h1 {
+    margin-top: 50px;
+}
+
 
 /* CONTAINER PLAYBAR */
 
