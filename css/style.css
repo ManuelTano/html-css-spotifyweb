@@ -256,18 +256,33 @@ h4 {
 
 .timeline {
     height: 4px;
-    width: 400px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: grey;
+    margin: 0px 15px;
+}
+
+.timeline-white {
+    height: 4px;
+    width: 20%;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+
+
+.vol-line {
+    height: 4px;
+    width: 40%;
     border-radius: 20px;
     background-color: grey;
     margin: 0px 5px;
 }
 
-.vol-line {
+.vol-line-white {
     height: 4px;
-    width: 200px;
+    width: 20%;
     border-radius: 20px;
-    background-color: grey;
-    margin: 0px 5px;
+    background-color: lightgray;                        
 }
 
 .col-right > i {
