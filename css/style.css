@@ -144,8 +144,7 @@ ul {
     font-weight: bold;
 }
 
-.row
-{
+.row{
     display: flex;
     margin-top: 25px;
     justify-content: space-between;
@@ -306,4 +305,26 @@ h4 {
 
 .time {
     font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+
+    .row {
+        flex-wrap: wrap;
+    }
+    
+    .col {
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
 }
