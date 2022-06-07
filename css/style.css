@@ -34,7 +34,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    overflow-y: auto;
+    overflow-y: hidden;
 
 }
 
@@ -93,6 +93,10 @@ a {
 
 .playlist ul li {
     line-height: 35px;
+}
+
+
+.playlist ul {
 }
 
 /* CONTAINER MUSIC */
@@ -164,6 +168,7 @@ ul {
     text-align: center;
     width: calc(100% / 6);
     padding: 10px;
+    position: relative;
 }
 
 .col h3 {
@@ -475,5 +480,9 @@ li:hover {
 
 .col:hover img::after {
     content: '\f144';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
 }
